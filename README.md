@@ -10,12 +10,20 @@ In your `build.gradle`:
 
 ```gradle
  dependencies {
-   compile 'com.github.thuannv:AutoImageSwitcher:v1.1'
+   compile 'com.github.thuannv:AutoImageSwitcher:v1.2'
  }
+```
+In your resources res/values/arrays.xml
+```xml
+<array name="cover_images">
+    <item>@drawable/image_1</item>
+    <item>@drawable/image_2</item>
+    <item>@drawable/image_3</item>
+</array>
 ```
 
 In your xml layout file
-```java
+```xml
 ...
 <thuannv.autoimageswitcher.AutoImageSwitcher
     android:background="@android:color/black"

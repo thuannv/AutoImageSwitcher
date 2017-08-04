@@ -10,7 +10,7 @@ In your `build.gradle`:
 
 ```gradle
  dependencies {
-   compile 'com.github.thuannv:AutoImageSwitcher:v1.0'
+   compile 'com.github.thuannv:AutoImageSwitcher:v1.1'
  }
 ```
 

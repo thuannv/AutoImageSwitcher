@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="thuannv.demo.MainActivity">
+
+    <thuannv.autoimageswitcher.AutoImageSwitcher
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:delayAnimation="4000"
+        app:inAnimation="@anim/image_switcher_in_animation"
+        app:outAnimation="@anim/image_switcher_out_animation"
+        app:images="@array/cover_images"
+        />
+</android.support.v7.widget.FitWindowsFrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutoImageSwitcher">
+        <attr name="delayAnimation" format="integer|reference"/>
+        <attr name="inAnimation" format="reference" />
+        <attr name="outAnimation" format="reference" />
+        <attr name="images" format="reference" />
+    </declare-styleable>
+</resources>

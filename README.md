@@ -1,8 +1,18 @@
+[![](https://jitpack.io/v/thuannv/AutoImageSwitcher.svg)](https://jitpack.io/#thuannv/AutoImageSwitcher)
+
 
 # AutoImageSwitcher
 A library for automatically switching images.
 
 ## Getting started
+
+In your `build.gradle`:
+
+```gradle
+ dependencies {
+   compile 'com.github.thuannv:AutoImageSwitcher:v1.0'
+ }
+```
 
 In your xml layout file
 ```java

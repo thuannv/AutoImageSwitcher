@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AutoImageSwitcher</string>
+    <string name="login_method">Login</string>
+    <string name="policy">Login means you are agreed with &lt;a href=\"https://www.google.com.vn\"&gt;Terms of Use and Privacy Policy&lt;/a&gt; of AutoImageSwitcher.</string>
 </resources>

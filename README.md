@@ -2,7 +2,9 @@
 
 
 # AutoImageSwitcher
-A library for automatically switching images.
+UpLive like login screen with the cover images automatically change with animations.
+
+![auto_image_switcher_demo.gif](assets/auto_image_switcher_demo.gif)
 
 ## Getting started
 
@@ -24,7 +26,6 @@ In your resources res/values/arrays.xml
 
 In your xml layout file
 ```xml
-...
 <thuannv.autoimageswitcher.AutoImageSwitcher
     android:background="@android:color/black"
     android:layout_width="match_parent"
@@ -34,7 +35,6 @@ In your xml layout file
     app:outAnimation="@anim/image_switcher_out_animation"
     app:images="@array/cover_images"
     />
-...
 ```
 
 ## License

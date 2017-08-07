@@ -4,11 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="thuannv.demo.MainActivity">
+    android:layout_height="match_parent">
 
     <thuannv.autoimageswitcher.AutoImageSwitcher
-        android:background="@android:color/black"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:delayAnimation="4000"
@@ -16,4 +14,152 @@
         app:outAnimation="@anim/image_switcher_out_animation"
         app:images="@array/cover_images"
         />
+
+    <!-- Login controls-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Gradient background behind texts -->
+        <View
+            android:id="@+id/gradient_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="270dp"
+            android:background="@drawable/login_gradient_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            />
+
+        <!-- Policy TextView -->
+        <thuannv.autoimageswitcher.demo.LinkTextView
+            android:id="@+id/policy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:gravity="center_horizontal"
+            android:text="@string/policy"
+            android:textColor="@android:color/white"
+            android:textColorLink="#338cff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <!-- Button Login Google -->
+        <LinearLayout
+            android:id="@+id/btn_login_google"
+            android:layout_width="144dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_login_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/policy"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_google"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Google"
+                android:textColor="#303740"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <!-- Button Login Facebook -->
+        <LinearLayout
+            android:id="@+id/btn_login_facebook"
+            android:layout_width="144dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_login_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/btn_login_google"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_facebook"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Facebook"
+                android:textColor="#303740"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <!-- Label for login method -->
+        <TextView
+            android:id="@+id/textview_login_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/login_method"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_login_facebook"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <!-- Label for App Name -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/textview_login_method"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/app_name"
+            tools:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="6dp"
+            android:textSize="19sp"
+            android:shadowColor="#33000000"
+            android:shadowDy="2"
+            />
+
+        <!-- App Icon -->
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:layout_constraintBottom_toTopOf="@+id/app_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginBottom="10dp"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
 </android.support.v7.widget.FitWindowsFrameLayout>

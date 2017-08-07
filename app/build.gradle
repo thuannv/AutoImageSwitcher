@@ -1,4 +1,18 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
 
 android {
     compileSdkVersion 25
@@ -31,4 +45,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
+
+    // butterknife
+    def butterKnifeVersion = '8.2.1'
+    apt "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
+    compile "com.jakewharton:butterknife:${butterKnifeVersion}"
 }

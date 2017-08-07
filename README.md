@@ -4,7 +4,7 @@
 # AutoImageSwitcher
 UpLive like login screen with the cover images automatically change with animations.
 
-![auto_image_switcher_demo.gif](assets/auto_image_switcher_demo.gif)
+![auto_image_switcher_demo.gif](assets/auto_image_switcher.gif)
 
 ## Getting started
 
